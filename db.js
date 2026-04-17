@@ -24,7 +24,7 @@ async function connectDb() {
   const connection = await mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: '' // TODO: change to your MySQL root password
+    password: 'root1234' 
   });
 
   await connection.query('CREATE DATABASE IF NOT EXISTS mycvproject');
